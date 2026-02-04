@@ -8,10 +8,12 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// init function
 func init() {
 	repository.Dbconnection()
 }
-// main function 
+
+// main function
 func main() {
 	router := gin.Default()
 	router.Use(cors.Default())
@@ -23,4 +25,3 @@ func main() {
 	router.GET("/completedata", Routes.CompletedData)
 	router.Run(":8000")
 }
-	
