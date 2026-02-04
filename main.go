@@ -11,7 +11,7 @@ import (
 func init() {
 	repository.Dbconnection()
 }
-
+// main function 
 func main() {
 	router := gin.Default()
 	router.Use(cors.Default())
